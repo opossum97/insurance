@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="770.0" prefWidth="1150.0"
+            xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.insurance.AdminController">
+    <children>
+        <Label fx:id="name" layoutX="50.0" layoutY="20.0" style="-fx-font-weight: bold;-fx-font-size: 16;"></Label>
+        <TableView fx:id="table" layoutX="20.0" layoutY="50.0"></TableView>
+        <TableView fx:id="tableClient" layoutX="50.0" layoutY="80.0"></TableView>
+        <Label fx:id="usl" layoutX="70.0" layoutY="550.0" text="Услуга" style="-fx-font-weight: bold;-fx-font-size: 16;"/>
+        <TextField fx:id="nameUslugi" layoutX="50.0" layoutY="600.0" />
+        <Label fx:id="nameUsl" layoutX="50.0" layoutY="580.0" text="Название услуги" />
+        <TextField fx:id="place" layoutX="50.0" layoutY="650.0" />
+        <Label fx:id="placeLabel" layoutX="50.0" layoutY="630.0" text="Место оказания услуги" />
+        <Label fx:id="vid" layoutX="550.0" layoutY="550.0" text="Вид" style="-fx-font-weight: bold;-fx-font-size: 16;"/>
+        <TextField fx:id="nameVid" layoutX="400.0" layoutY="600.0" />
+        <Label fx:id="nameV" layoutX="400.0" layoutY="580.0" text="Название вида" />
+        <TextField fx:id="price" layoutX="400.0" layoutY="650.0" />
+        <Label fx:id="priceLabel" layoutX="400.0" layoutY="630.0" text="Цена" />
+        <TextField fx:id="number" layoutX="600.0" layoutY="600.0" />
+        <Label fx:id="numP" layoutX="600.0" layoutY="580.0" text="Количество посещений" />
+        <TextField fx:id="numFamily" layoutX="600.0" layoutY="650.0" />
+        <Label fx:id="numF" layoutX="600.0" layoutY="630.0" text="Количество членов семьи" />
+        <Button fx:id="viewClients" layoutX="540.0" layoutY="710.0" mnemonicParsing="false" onAction="#viewContacts" text="Проверить клиентов" />
+        <Button fx:id="viewVidi" layoutX="480.0" layoutY="710.0" mnemonicParsing="false" onAction="#backToVidi" text="Посмотреть виды" />
+        <Button fx:id="add" layoutX="410.0" layoutY="710.0" mnemonicParsing="false" onAction="#addData" text="Добавить" />
+    </children>
+</AnchorPane>

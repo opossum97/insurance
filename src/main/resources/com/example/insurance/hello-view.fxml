@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="425.0"
+      prefWidth="600.0" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.insurance.HelloController">
+<children>
+    <Label layoutX="50.0" layoutY="50.0" text="Страховая компания" style="-fx-font-weight: bold;-fx-font-size: 24;"/>
+    <TextField fx:id="login" layoutX="280.0" layoutY="200.0" />
+    <Label layoutX="190.0" layoutY="210.0" text="Логин" />
+    <Label layoutX="190.0" layoutY="250.0" text="Пароль" />
+    <PasswordField fx:id="password" layoutX="280.0" layoutY="250.0" />
+    <Button id="submitButton" layoutX="375.0" layoutY="315.0" mnemonicParsing="false" onAction="#getData" text="Войти" />
+    <Label fx:id="name" layoutX="190.0" layoutY="150.0" style="-fx-font-weight: bold;-fx-font-size: 16;"></Label>
+</children>
+</Pane>
+
